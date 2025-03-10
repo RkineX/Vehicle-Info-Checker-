@@ -1,21 +1,46 @@
-# Vehicle Information Checker
+# Vehicle Registration Details Checker
 
-A Python script to retrieve vehicle registration details from India's Parivahan portal (educational purposes only).
+[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Important**: Use responsibly and only with proper authorization. See [ethical considerations](#ethical-considerations) below.
+A Python-based tool to ethically retrieve vehicle registration details from India's Parivahan portal (Educational Use Only)
 
-## Features
-- Retrieves vehicle registration details
-- Parses essential information while masking sensitive data
-- Input validation for registration numbers
-- Rate limiting to prevent server overload
-- Ethical data handling implementation
+## 📌 Important Disclaimer
+**This project is intended for educational purposes only.**  
+❌ Not affiliated with Government of India  
+❌ Not for commercial use  
+❌ Never store/share retrieved data  
 
-## Installation
+## ✨ Features
+- Basic vehicle information retrieval
+- Sensitive data masking (engine/chassis numbers)
+- RTO code to name conversion
+- Ethical request rate limiting
+- Error handling for website changes
 
-### Requirements
+## 📋 Prerequisites
 - Python 3.6+
-- Required packages:
-  ```bash
-  
-  pip install requests beautifulsoup4
+- `requests` library
+- `beautifulsoup4` library
+
+## 🛠 Installation
+```bash
+pip install requests beautifulsoup4
+```
+## 🚀 Usage
+```bash
+python vehicle_info_checker.py <REGISTRATION_NUMBER>
+```
+## Example
+- python `vehicle_info_checker.py KL07CN3645`
+- Registration No: `KL07CN3645`
+- State: `Kerala` | RTO: `Ernakulam`
+- Vehicle: `Maruti Suzuki Swift VXi`
+- Class: `Motor Car (LMV)`
+- Fuel: `PETROL`
+- Registration Date: `15/07/2018`
+- Engine: `K12N*****67`
+- Chassis: `MA3E*****89`
+- Insurance Valid Until: `30/11/2024`
+- Pollution Check: `01/01/2025`
+
