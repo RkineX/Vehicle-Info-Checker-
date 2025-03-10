@@ -17,4 +17,5 @@ A Python script to retrieve vehicle registration details from India's Parivahan 
 - Python 3.6+
 - Required packages:
   ```bash
+  
   pip install requests beautifulsoup4
